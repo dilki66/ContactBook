@@ -37,6 +37,15 @@
                         Console.WriteLine("Contact already exists.");
                     }
                     break;
+
+                case 2:
+                Console.WriteLine("--- All Contacts ---");
+                    foreach (var contact in contacts)
+                    {
+                        Console.WriteLine($"Name:{contact.Key} , Email :{contact.Value}");
+                    }
+                    break;
+
             }
         }
     }
