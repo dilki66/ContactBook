@@ -39,13 +39,68 @@
                     break;
 
                 case 2:
-                Console.WriteLine("--- All Contacts ---");
+                    Console.WriteLine("--- All Contacts ---");
                     foreach (var contact in contacts)
                     {
                         Console.WriteLine($"Name:{contact.Key} , Email :{contact.Value}");
                     }
                     break;
 
+                case 3:
+                    Console.WriteLine("Enter the name to search");
+                    string searchName = Console.ReadLine();
+
+                    if (contacts.TryGetValue(searchName, out string foundemail))
+                    {
+                        Console.WriteLine($"Email: {foundemail}");
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Name Not Found");
+                    }
+                    break;
+
+                case 4:
+                    Console.WriteLine("Enter the name to update email");
+                    string updateName = Console.ReadLine();
+
+                    if (contacts.ContainsKey(updateName))
+                    {
+                        Console.WriteLine("Enter new email");
+                        string newEmail = Console.ReadLine();
+                        contacts[updateName] = newEmail;
+                        Console.WriteLine("Email updated");
+                    }
+                    else
+                    {
+                        Console.WriteLine("contact not found");
+                    }
+                    break;
+
+                case 5:
+                    Console.WriteLine("Enter the name to delete");
+                    string deleteName = Console.ReadLine();
+
+                    if (contacts.Remove(deleteName))
+                    {
+                        Console.WriteLine("Contact deleted");
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Contact not found");
+                    }
+                    break;
+
+                case 6:
+                    exit = true;
+                    Console.WriteLine("Exiting Contact Book");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid option.. Try again..!!");
+                    break;
             }
         }
     }

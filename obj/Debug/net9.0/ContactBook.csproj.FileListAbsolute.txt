@@ -12,3 +12,4 @@ E:\ContactBook\ContactBook\obj\Debug\net9.0\refint\ContactBook.dll
 E:\ContactBook\ContactBook\obj\Debug\net9.0\ContactBook.pdb
 E:\ContactBook\ContactBook\obj\Debug\net9.0\ContactBook.genruntimeconfig.cache
 E:\ContactBook\ContactBook\obj\Debug\net9.0\ref\ContactBook.dll
+E:\ContactBook\contactBook\obj\Debug\net9.0\ContactBook.sourcelink.json
