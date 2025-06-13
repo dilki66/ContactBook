@@ -1,2 +1,38 @@
+## Ignore build results
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+## VS Code settings
+.vscode/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Cache files
 *.cache
+*.log
+*.tmp
+
+## Auto-generated files
 *.input
+GeneratedMSBuildEditorConfig.input
+
+## Packages
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+
+## Others
+.DS_Store
+Thumbs.db
+
+## Ignore README screenshots if you want
+assets/
+images/
