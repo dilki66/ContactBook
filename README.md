@@ -32,7 +32,7 @@ Exit the application safely
 2. Enters a number to choose an operation.
 3. The app performs the selected action using a dictionary
 
-#### Technologies Used
+### Technologies Used
 - C#
 - .NET Console Application
 - Dictionary<TKey, TValue>
